@@ -18,6 +18,7 @@ defmodule IrisWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    post "/predict", PageController, :show
   end
 
   # Other scopes may use custom stacks.
